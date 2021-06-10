@@ -17,9 +17,9 @@ jobs:
     steps:
     -name: Prepare project for development
      run: |
-     python -m venv 
-     .venv.venv/bin/pip install --upgrade pip
-     .venv/bin/pip install pytest
+        python -m venv 
+        .venv.venv/bin/pip install --upgrade pip
+        .venv/bin/pip install pytest
      
      -name: Checkout project
       uses: actions/checkout@v2
