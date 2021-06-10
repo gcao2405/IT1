@@ -15,16 +15,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout project
+      uses: actions/checkout@v2
+      
     - name: Prepare project for development
       run: |
         python -m venv .venv
         source .venv/bin/activate
         python -m pip install --upgrade pip
         pip install pytest
-     
-    - name: Checkout project
-      uses: actions/checkout@v2
-      
+   
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
