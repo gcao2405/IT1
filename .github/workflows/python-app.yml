@@ -18,6 +18,7 @@ jobs:
     - name: Prepare project for development
       run: |
         python -m venv .venv
+        .venv\Scripts\activate
         .venv.venv/bin/pip install --upgrade pip
         .venv/bin/pip install pytest
      
